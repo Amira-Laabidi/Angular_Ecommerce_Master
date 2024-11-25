@@ -1,0 +1,115 @@
+@import "assets/sass/core/variables/gradient-variables.scss";
+
+:host ::ng-deep {
+  /* General Chart Styles */
+  .ct-grid {
+    stroke-dasharray: 0;
+    stroke: rgba(0, 0, 0, 0.1);
+  }
+
+  .ct-label {
+    font-size: 0.9rem;
+  }
+
+  /* Widget Line Charts */
+  .WidgetlineChart .ct-point,
+  .WidgetlineChart1 .ct-point,
+  .WidgetlineChart2 .ct-point,
+  .WidgetlineChart3 .ct-point {
+    stroke-width: 0;
+  }
+
+  .WidgetlineChart .ct-line {
+    stroke: #2f8be6;
+    stroke-width: 4px;
+  }
+
+  .WidgetlineChart1 .ct-line {
+    stroke: #f77e17;
+    stroke-width: 4px;
+  }
+
+  .WidgetlineChart2 .ct-line {
+    stroke: #975aff;
+    stroke-width: 4px;
+  }
+
+  .WidgetlineChart3 .ct-line {
+    stroke: #40c057;
+    stroke-width: 4px;
+  }
+
+  .WidgetlineChartShadow,
+  .WidgetlineChart1Shadow,
+  .WidgetlineChart2Shadow,
+  .WidgetlineChart3Shadow {
+    -webkit-filter: drop-shadow(0px 15px 6px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 15px 6px rgba(0, 0, 0, 0.15));
+  }
+
+  /* Donut Charts */
+  .donut1 .ct-label,
+  .donut2 .ct-label,
+  .donut3 .ct-label {
+    font-size: 4rem;
+  }
+
+  .donut1 .ct-done .ct-slice-donut {
+    stroke: #fcc173;
+  }
+
+  .donut2 .ct-done .ct-slice-donut {
+    stroke: #81c8f7;
+  }
+
+  .donut3 .ct-done .ct-slice-donut {
+    stroke: #fca897;
+  }
+
+  /* Line Area Chart */
+  .lineAreaChart .ct-line {
+    stroke-width: 1px;
+  }
+
+  .lineAreaChart .ct-point-circle {
+    stroke-width: 2px;
+    fill: #fff;
+  }
+
+  .lineAreaChart .ct-series-a .ct-area {
+    fill: url($dashboard2-gradient-path + #gradient) !important;
+  }
+
+  .lineAreaChart .ct-series-a .ct-line,
+  .lineAreaChart .ct-series-a .ct-point-circle {
+    stroke: #975aff;
+  }
+
+  .lineAreaChart .ct-series-b .ct-area {
+    fill: #f9877c;
+    fill-opacity: 0.1;
+  }
+
+  .lineAreaChart .ct-series-b .ct-point-circle {
+    stroke: #f55252;
+  }
+
+  /* Dashboard User Image */
+  .dash2-user img {
+    width: 6.5rem;
+    background-color: transparent;
+    border: 2px solid #975aff;
+    padding: 0.4rem;
+  }
+
+  /* Progress Bar */
+  .dash2-progress {
+    height: 1rem;
+    background-color: #f7f7f8;
+  }
+
+  .dash2-progress .progress-bar:last-child {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+}

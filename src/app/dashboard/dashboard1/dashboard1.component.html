@@ -1,0 +1,71 @@
+<!-- Container for Statistics cards --> 
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <!-- First Column for Post Category -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <app-post-category></app-post-category> <!-- Integrating PostCategory Component -->
+        </div>
+      </div>
+    </div>
+    <!-- Second Column for Get All Category -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <app-get-all-category></app-get-all-category> <!-- Integrating GetAllCategory Component -->
+        </div>
+      </div>
+    </div>
+    <!-- Third Column for Add Product -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <app-add-product></app-add-product> <!-- Integrating AddProduct Component -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Get All Products Section -->
+<div class="row justify-content-center">
+  <div class="col-12">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <app-get-all-products></app-get-all-products> <!-- Integrating GetAllProduct Component -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Statistics cards Ends -->
+
+<!-- Line with Area Chart 1 Starts -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">PRODUCTS SALES</h4>
+      </div>
+      <div class="card-content">
+        <div class="card-body">
+          <div class="chart-info mb-3 ml-3">
+            <span class="gradient-purple-bliss d-inline-block rounded-circle mr-1" style="width:15px; height:15px;"></span>
+            <span>Sales</span>
+            <span class="gradient-mint d-inline-block rounded-circle mr-1 ml-2" style="width:15px; height:15px;"></span>
+            <span>Visits</span>
+          </div>
+          <div id="line-area" class="lineArea">
+            <x-chartist class="height-350" [data]="lineArea.data" [type]="lineArea.type" [options]="lineArea.options"
+              [responsiveOptions]="lineArea.responsiveOptions" [events]="lineArea.events">
+            </x-chartist>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Line with Area Chart 1 Ends -->
+
+<!-- Remaining dashboard sections... -->

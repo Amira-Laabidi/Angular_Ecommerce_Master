@@ -1,0 +1,20 @@
+<div class="container my-5">
+    <div class="row">
+      <!-- Loop through products and display each one -->
+      <div class="col-md-4" *ngFor="let product of products">
+        <div class="card product-card">
+          <img class="card-img-top" [src]="product.imageUrl" alt="{{ product.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <p class="card-text price"><strong>{{ product.unitPrice | currency }}</strong></p>
+            <div class="button-group">
+              <a [routerLink]="['/product', product.id]" class="btn btn-primary view-details-btn">View Details</a>
+              <button class="btn btn-success add-to-cart-btn" (click)="addToCart(product)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

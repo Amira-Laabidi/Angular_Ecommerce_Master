@@ -1,0 +1,213 @@
+@import "assets/sass/core/variables/gradient-variables.scss";
+
+:host {
+  ::ng-deep {
+    /* Grid settings for chart */
+    .ct-grid {
+      stroke-dasharray: 0;
+      stroke: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Label styling */
+    .ct-label {
+      font-size: 0.9rem;
+    }
+
+    /* Line chart - Points and Lines */
+    .WidgetlineChart .ct-point {
+      stroke-width: 0;
+    }
+
+    .WidgetlineChart .ct-line {
+      stroke: rgba(255, 255, 255, 0.6);
+      stroke-width: 4px;
+    }
+
+    .WidgetlineChart .ct-grid {
+      stroke-dasharray: 0;
+      stroke: transparent !important;
+    }
+
+    .WidgetlineChart .ct-point-regular {
+      stroke-width: 2px;
+      fill: transparent;
+      stroke: transparent !important;
+    }
+
+    /* Drop shadow for chart */
+    .WidgetlineChartshadow {
+      filter: drop-shadow(0px 13px 6px rgba(0, 0, 0, 0.5));
+    }
+
+    /* Line Area settings */
+    .lineArea .ct-line,
+    .lineArea .ct-point {
+      stroke-width: 0;
+    }
+
+    .lineArea .ct-series-a .ct-area {
+      fill-opacity: 0.7;
+      fill: url(#gradient1) !important;
+    }
+
+    .lineArea .ct-series-b .ct-area {
+      fill: url(#gradient2) !important;
+      fill-opacity: 0.9;
+    }
+
+    .lineArea .ct-point-regular {
+      stroke-width: 2px;
+      fill: transparent;
+      stroke: transparent !important;
+    }
+
+    /* Stack Bar chart colors */
+    .Stackbarchart .ct-series-a .ct-bar {
+      stroke: url(#linearGradient1) !important;
+    }
+
+    .Stackbarchart .ct-series-b .ct-bar {
+      stroke: #EEEEEE;
+    }
+
+    /* Icon and cart table */
+    .shopping-cart i.ft-trash-2 {
+      cursor: pointer;
+    }
+
+    .shopping-cart i.ft-trash-2:hover {
+      color: #F55252;
+    }
+
+    .shopping-cart table td {
+      vertical-align: middle;
+    }
+
+    /* Line Area2 settings */
+    .lineArea2 .ct-line {
+      fill: none;
+      stroke-width: 2px;
+    }
+
+    .lineArea2 .ct-point-circle {
+      stroke-width: 2px;
+      fill: #FFFFFF;
+    }
+
+    .lineArea2 .ct-series-a .ct-area {
+      fill: url(#gradient3) !important;
+      fill-opacity: 0.8;
+    }
+
+    .lineArea2 .ct-series-a .ct-line {
+      stroke: #60AFF0;
+    }
+
+    .lineArea2 .ct-series-a .ct-point-circle {
+      stroke: #2F8BE6;
+    }
+
+    .lineArea2 .ct-series-b .ct-area {
+      fill: url(#gradient4) !important;
+      fill-opacity: 0.8;
+    }
+
+    .lineArea2 .ct-series-b .ct-line {
+      stroke: #6CD975;
+    }
+
+    .lineArea2 .ct-series-b .ct-point-circle {
+      stroke: #40C057;
+    }
+
+    /* General line chart */
+    .lineChart .ct-line {
+      fill: none;
+      stroke: #FFFFFF;
+      stroke-width: 1px;
+    }
+
+    .lineChart .ct-label {
+      color: #FFFFFF;
+    }
+
+    .lineChart .ct-point-circle {
+      stroke-width: 2px;
+      fill: #FFFFFF;
+    }
+
+    /* Shadow effect for charts */
+    .lineChartShadow {
+      filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.5));
+    }
+
+    /* Bar Chart styles */
+    .BarChart .ct-series-a .ct-bar:nth-of-type(4n+1) {
+      stroke: url(#gradient7);
+    }
+
+    .BarChart .ct-series-a .ct-bar:nth-of-type(4n+2) {
+      stroke: url(#gradient5);
+    }
+
+    .BarChart .ct-series-a .ct-bar:nth-of-type(4n+3) {
+      stroke: url(#gradient6);
+    }
+
+    .BarChart .ct-series-a .ct-bar:nth-of-type(4n+4) {
+      stroke: url(#gradient4);
+    }
+
+    .BarChartShadow {
+      filter: drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
+    }
+
+    /* Donut chart styles */
+    .donut .ct-label {
+      font-size: 20px;
+    }
+
+    .donut .ct-done .ct-slice-donut {
+      stroke: #40C057;
+      stroke-width: 24px !important;
+    }
+
+    .donut .ct-progress .ct-slice-donut {
+      stroke: #F77E17;
+      stroke-width: 16px !important;
+    }
+
+    .donut .ct-outstanding .ct-slice-donut {
+      stroke: #975AFF;
+      stroke-width: 8px !important;
+    }
+
+    .donut .ct-started .ct-slice-donut {
+      stroke: #2F8BE6;
+      stroke-width: 32px !important;
+    }
+
+    /* Card styling for Post Category and Get All Category */
+    .card {
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(96, 41, 41, 0.1);
+    }
+
+    .card-header {
+      background-color: #ec97d4;
+      padding: 1.5rem;
+      font-size: 1.25rem;
+    }
+
+    .card-body {
+      padding: 1.8rem;
+    }
+
+    @media (max-width: 767px) {
+      .card-body {
+        padding: 1rem;
+      }
+    }
+  }
+}

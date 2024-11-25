@@ -1,0 +1,22 @@
+<div class="container my-5">
+    <h2>Your Cart</h2>
+    <div *ngIf="cartItems.length > 0; else emptyCart">
+      <div *ngFor="let item of cartItems" class="cart-item d-flex justify-content-between align-items-center my-3">
+        <img [src]="item.productImg" class="img-thumbnail" width="100" alt="Product Image">
+        <div>
+          <h5>{{ item.productName }}</h5>
+          <p>{{ item.productPrice | currency }}</p>
+        </div>
+        <input type="number" [(ngModel)]="item.productQuantity" class="form-control w-25">
+        <button class="btn btn-danger" (click)="removeFromCart(item)">Remove</button>
+      </div>
+      <div class="total mt-4">
+        <p><strong>Total: {{ totalPrice | currency }}</strong></p>
+        <button class="btn btn-primary">Proceed to Checkout</button>
+      </div>
+    </div>
+    <ng-template #emptyCart>
+      <p>Your cart is empty.</p>
+    </ng-template>
+  </div>
+  

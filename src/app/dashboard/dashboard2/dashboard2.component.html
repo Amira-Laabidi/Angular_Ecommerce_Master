@@ -1,0 +1,39 @@
+<div class="row match-height">
+  <!-- Product Card -->
+  <div class="col-xl-4 col-lg-12">
+    <div class="card overflow-hidden">
+      <div class="card-content">
+        <div class="card-img">
+          <ngb-carousel>
+            <ng-template ngbSlide>
+              <img src="assets/img/photos/17.jpg" alt="First slide" class="img-fluid">
+            </ng-template>
+            <ng-template ngbSlide>
+              <img src="assets/img/photos/13.jpg" alt="Second slide" class="img-fluid">
+            </ng-template>
+            <ng-template ngbSlide>
+              <img src="assets/img/photos/12.jpg" alt="Third slide" class="img-fluid">
+            </ng-template>
+          </ngb-carousel>
+          <button type="button" class="btn btn-floating halfway-fab bg-danger" (click)="addToCart()">
+            <i class="ft-plus"></i>
+          </button>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Our Products</h4>
+          <p>Developer friendly and highly customizable admin templates with Light and Dark layouts.</p>
+          <div>
+            <span class="badge bg-light-primary mr-2">Apex</span>
+            <span class="badge bg-light-success mr-2">Vuexy</span>
+            <span class="badge bg-light-warning mr-2">Frest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Component -->
+  <div class="col-xl-8 col-lg-12">
+    <app-product-list></app-product-list>
+  </div>
+</div>

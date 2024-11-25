@@ -1,0 +1,45 @@
+<div class="col-xl-8 col-lg-12 col-12">
+    <div class="card shopping-cart">
+      <div class="card-header pb-2">
+        <h4 class="card-title mb-1">Shopping Cart</h4>
+      </div>
+      <div class="card-content">
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table text-center m-0">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Status</th>
+                  <th>Amount</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let product of products">
+                  <td>
+                    <img class="height-50" [src]="product.imageUrl" alt="Product image" />
+                  </td>
+                  <td>{{ product.name }}</td>
+                  <td>{{ product.unitsInStock }}</td>
+                  <td>
+                    <span class="badge badge-pill" 
+                          [ngClass]="{'bg-light-primary': product.active, 'bg-light-danger': !product.active}">
+                      {{ product.active ? 'Active' : 'Disabled' }}
+                    </span>
+                  </td>
+                  <td>{{ product.unitPrice | currency }}</td>
+                  <td>
+                    <i class="ft-trash-2" (click)="deleteProduct(product.id)"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

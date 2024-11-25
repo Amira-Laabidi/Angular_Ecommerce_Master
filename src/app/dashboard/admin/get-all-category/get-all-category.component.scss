@@ -1,0 +1,82 @@
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #007bff;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  padding: 1rem;
+  text-align: center;
+}
+
+.table-bordered {
+  border: 2px solid #dee2e6;
+}
+
+.table th {
+  background-color: #f1f1f1;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.btn-sm {
+  padding: 5px 5px;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.pagination {
+  margin-top: 1rem;
+}
+
+.page-link {
+  cursor: pointer;
+}
+
+.page-item.disabled .page-link {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.search-bar {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .card-body {
+    padding: 1rem;
+  }
+
+  .table th, .table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

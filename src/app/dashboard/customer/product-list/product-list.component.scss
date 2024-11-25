@@ -1,0 +1,110 @@
+/* Container for product cards */
+.container.my-5 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-card {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card image */
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+  }
+  
+  .product-card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+  
+  /* Card body styles */
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .card-text {
+    color: #666;
+  }
+  
+  .price {
+    color: #28a745;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  /* Button group styling */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    width: 48%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .view-details-btn {
+    background-color: #ff00cc;
+    border: 1px solid #ff0055;
+    color: #fff;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #734657;
+    border-color: #004085;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #be9bba;
+    border: 1px solid #bd89ba;
+    color: #fff;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #a54e8a;
+    border-color: #1e7e34;
+  }
+  
+  /* Card hover effects */
+  .product-card:hover .view-details-btn,
+  .product-card:hover .add-to-cart-btn {
+    transform: scale(1.05);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 767px) {
+    .col-md-4 {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
